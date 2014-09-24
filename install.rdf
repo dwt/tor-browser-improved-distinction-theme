@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>torbrowser-improved-distinction@haecker.me</em:id>
+    <em:name>Tor browser improved distinction theme</em:name>
+    <em:internalName>torbrowser-improved-distinction</em:internalName>
+    <em:description>
+        Provide easy visual distionction of tor browser windows to regular 
+        firefox windows. To help prevent exposing yourself by accidentally entering
+        incriminating information into the wrong window.
+    </em:description>
+    <em:version>0.1</em:version>
+    <em:bootstrap>true</em:bootstrap>
+    <em:creator>Martin Häcker</em:creator>
+    <em:homepageURL>https://häcker.net</em:homepageURL>
+    <em:type>2</em:type>
+
+    <!-- Mozilla Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <!-- em:maxVersion is ignored -->
+        <em:maxVersion>10.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
