@@ -1,13 +1,20 @@
-zipfile = torbrowser-improved-distinction.xpi
-files := $(filter-out $(zipfile), $(wildcard *))
+xpi = dist/torbrowser-improved-distinction.xpi
+files := $(filter-out dist, $(wildcard *))
 
 SHELL = /bin/sh
+UNAME := $(shell uname -s)
 .PHONY: all clean
 
-all: $(zipfile)
-
-$(zipfile): $(files)
-	zip -r $@ $(files)
+all: $(xpi)
 
 clean:
-	-rm -f $(zipfile)
+	-rm -f $(xpi)
+
+$(xpi): $(files)
+	zip -r $@ $?
+
+dist/update-installed-xpi: $(xpi) 
+	# sadly mac only 
+	-open -a Firefox $(xpi)
+	# -firefox $(xpi)
+	-touch $@
