@@ -2,7 +2,6 @@ xpi = dist/torbrowser-improved-distinction.xpi
 files := $(filter-out dist, $(wildcard *))
 
 SHELL = /bin/sh
-UNAME := $(shell uname -s)
 .PHONY: all clean
 
 all: $(xpi)
