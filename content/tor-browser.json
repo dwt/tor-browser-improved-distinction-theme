@@ -1,9 +1,0 @@
-{
-    "custom": true,
-    "footerURL": "chrome://xuschoolhello1/skin/footer.png",
-    "headerURL": "chrome://xuschoolhello1/skin/header.png",
-	"textcolor": "#fff",
-	"accentcolor": "#6b6b6b",
-    "id": "1",
-    "name": "Prevent confusing firefox and tor browser windows"
-}
