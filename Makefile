@@ -18,3 +18,7 @@ dist/update-installed-xpi: $(xpi)
 	-open -a Firefox $(xpi)
 	# -firefox $(xpi)
 	-touch $@
+
+.PHONY: watch
+watch: $(xpi)
+	watching_testrunner --pattern='*' -- make dist/update-installed-xpi
