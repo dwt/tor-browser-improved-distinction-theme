@@ -12,10 +12,10 @@
         firefox windows. To help prevent exposing yourself by accidentally entering
         incriminating information into the wrong window.
     </em:description>
-    <em:version>0.1</em:version>
+    <em:version>1.0</em:version>
     <em:bootstrap>true</em:bootstrap>
     <em:creator>Martin Häcker</em:creator>
-    <em:homepageURL>https://häcker.net</em:homepageURL>
+    <em:homepageURL>http://haecker.me</em:homepageURL>
     <em:type>2</em:type>
 
     <!-- Mozilla Firefox -->
