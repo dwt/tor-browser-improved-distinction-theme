@@ -1,14 +1,15 @@
-xpi = dist/torbrowser-improved-distinction.xpi
+xpi = dist/torbrowser-improved-distinction@haecker.me.xpi
 files := $(filter-out dist, $(wildcard *))
 
 SHELL = /bin/sh
-.PHONY: all clean
+.PHONY: all clean xpi
 
-all: $(xpi)
+all: clean xpi
 
 clean:
-	-rm -f $(xpi)
+	-rm -f dist/*
 
+xpi: $(xpi)
 $(xpi): $(files)
 	zip -r $@ $?
 
